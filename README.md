@@ -1,11 +1,10 @@
 # 1.project summary
 
 It's a project that writing with react and typescript.
+單頁面
 
-
-
-> Learn more,  check out the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-> 
+> Learn more, check out the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+>
 > To learn React, check out the [React documentation](https://reactjs.org/).
 
 # 2.prepare before code
@@ -21,7 +20,7 @@ It's a project that writing with react and typescript.
 ```
 my-app
 ├── README.md
-├── node_modules 
+├── node_modules
 ├── package.json
 ├── tsconfig.json 配置 typescript
 ├── public  不參與打包、包含項目靜態文件
