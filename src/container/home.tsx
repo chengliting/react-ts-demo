@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import '../scss/Home.scss'
+import '../scss/Home.scss';
+import Location from './Location';
 import { useLocation } from 'react-router-dom'
 interface IProps {
 }
@@ -11,9 +12,11 @@ interface IState {
 
 export default class Home extends React.Component<IProps, IState>  {
     timerID: number;
+    // location: useLocation;
     constructor(props:IProps) {
         super(props);
         this.timerID = 0;
+        // this.location = useLocation();
         this.state = {
             currentIndex:0,
             date: new Date()
@@ -25,14 +28,14 @@ export default class Home extends React.Component<IProps, IState>  {
             () => this.tick(),
             1000
           );
+        //   this.setLoaction();
     }
   
     componentWillUnmount() {
         console.log('lifecycle---->>>componentWillUnmount')
         clearInterval(this.timerID);
     }
-    // const location = useLocation();
-//   const { from, pathname } = location
+
     tick = () =>{
         this.setState({
             date: new Date()
@@ -43,10 +46,11 @@ export default class Home extends React.Component<IProps, IState>  {
         return (  
         <div className="App">
             <h2>It is {this.state.date.toLocaleTimeString()}</h2>
+            <div><Location></Location></div>
             <div className="main">
             主頁
             </div>
-            <div className="nav-bar">
+            <div className="nav-bottom-bar">
                 <ul>
                     <li>首頁</li>
                     <li>tab</li>
@@ -57,11 +61,3 @@ export default class Home extends React.Component<IProps, IState>  {
     }
 }
 
-// function tick() {
-//     ReactDOM.render(
-//       <Clock date={new Date()} />,
-//       document.getElementById('root')
-//     );
-//   }
-  
-//   setInterval(tick, 1000);
