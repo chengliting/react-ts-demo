@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Main from './container/Main';
+import Home from './container/Home';
 import Mine from './container/Mine';
 import NotFound from './container/NotFound';
 import './App.scss';
@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
         <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/" element={<Home />} />
         <Route path="Mine" element={<Mine />} />
         <Route path="*" element={<NotFound />} />
         </Routes>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 // 首頁
-export default class NotFound extends Component {
+export default class NotFound extends React.Component {
     render() {
         return (<div>
          404
