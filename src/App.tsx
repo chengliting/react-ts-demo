@@ -1,22 +1,22 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from './container/Home';
+import Mine from './container/Mine';
+import NotFound from './container/NotFound';
 import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-        <div className="main">
-        主頁
-        </div>
-        <footer>
-            <ul>
-                <li>首頁</li>
-                <li>tab</li>
-                <li>我的</li>
-            </ul>
-        </footer>
-    </div>
+    <Router>
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="Mine" element={<Mine />} />
+        <Route path="*" element={<NotFound />} />
+        </Routes>
+    </Router>
   );
 }
+
+  
 
 export default App;
