@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Location from './Location';
+import Location from '../component/Location';
 // 首頁
 export default class Mine extends Component {
     render() {
