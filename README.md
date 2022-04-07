@@ -1,10 +1,9 @@
 # 1.project summary
 
 It's a project that writing with react and typescript.
-單頁面
 
 > Learn more, check out the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
->
+> 
 > To learn React, check out the [React documentation](https://reactjs.org/).
 
 # 2.prepare before code
@@ -29,8 +28,10 @@ my-app
 │   ├── manifest.json 配置PWA
 │   └── robots.txt 配置爬蟲相關
 └── src
-    ├── App.js 描述App本身
-    ├── App.test.js
+    ├── component 組件
+    ├── container 頁面
+    ├── scss 樣式文件
+    ├── App.js 路由
     ├── index.js 入口文件
     ├── serviceWorker.js
     ├── reportWebVitals.js 做埋點上報功能

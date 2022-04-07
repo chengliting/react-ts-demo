@@ -7,7 +7,7 @@ const Location = (props:any) => {
     
    const clickCount =()=>{
     const {parentCallback}=props;
-    parentCallback(`{location.pathname}`)
+    parentCallback(pathName) // 調用父組件函數並傳值
     }
     return (
         <div onClick={() => clickCount()}>
