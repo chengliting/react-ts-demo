@@ -11,7 +11,7 @@ const Location = (props:any) => {
     }
     return (
         <div onClick={() => clickCount()}>
-            <span className='location-text'>您現在位於:{pathName}</span>
+            <span className='location-text'>您現在位於:{pathName||'首頁'}</span>
         </div>
     );
 }
