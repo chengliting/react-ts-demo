@@ -38,7 +38,7 @@ export default class Home extends React.Component<IProps, IState>  {
         this.setState({
             date: new Date()
         });
-    }
+    } 
      callback = (name: any) => {
         console.log(`name-${name}`)
       }

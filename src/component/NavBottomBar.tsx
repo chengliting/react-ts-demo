@@ -15,7 +15,7 @@ export default class NavBottomBar extends React.Component<IProps, IState> {
             routerName:''
         };
       }
-    callback = (name: String) => {
+      callback = (name: String) => {
         console.log(`name-${name}`)
       }
       switchNavTab = (routerName:String) =>{
@@ -27,13 +27,13 @@ export default class NavBottomBar extends React.Component<IProps, IState> {
       }
     render() {
         return (<div className="nav-bottom-bar">
-            <p><Location parentCallback={this.callback}/></p>
+            <div><Location parentCallback={this.callback}/></div>
         <ul>
             <li><Link to="/">首頁</Link></li>
             <li>tab</li>
             {/* 位於當前頁再點擊當前tab有問題 */}
-            <li><Link to="Mine">我的</Link></li>
-            {/* <li onClick={()=>{this.switchNavTab('Mine')}}>我的</li> */}
+            {/* <li><Link to="Mine">我的</Link></li> */}
+            <li onClick={()=>{this.switchNavTab('Mine')}}>我的</li>
         </ul>
     </div>)
     }
