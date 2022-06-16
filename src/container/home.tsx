@@ -40,10 +40,10 @@ export default class Home extends React.Component<IProps, IState>  {
         });
     } 
      callback = (name: any) => {
-        console.log(`name-${name}`)
+        console.log(`name4-${name}`)
       }
       switchTab = (name: any) => {
-        console.log(`name-${name}`)
+        console.log(`name3-${name}`)
       }
 
     render() {
