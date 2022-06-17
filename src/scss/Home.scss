@@ -2,14 +2,76 @@
 //     text-align: center;
 //   }
   .main {
-    background-color: #282c34; // dark color
-    min-height: 100vh;
+    // background-color: #282c34; // dark color
+    // min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+    .home-top {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 50px;
+        background-color: #ff8080;
+    }
+    .home-content {
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+       div {
+            color: #555555;
+            text-align: center;
+       }
+       .home-banner {
+            height: 115px;
+            line-height: 115px;
+            width: 318px;
+            margin: 15px auto;
+            background-color: #f2f2f2;  
+       }
+       .home-module-box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            // height: 171px;
+            // line-height: 171px;
+            margin: 15px 20px;
+            div {
+                width: 60px;
+                height: 56px;
+                margin: 10px 0;
+                // background-color: #f2f2f2;  
+                // border-radius: 10px;
+                svg {
+                    margin-top: 6px;
+                    font-size: 30px !important;
+                }
+                p {
+                    font-size: 10px;
+                }
+            }
+       }
+       .home-img-list {
+            height: 100%;
+            // height: 500px;
+            .img-list {
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                // background-color: pink;
+                div {
+                    margin: 10px 20px;
+                    width: 39%;
+                    height: 100px;
+                    background-color: #f2f2f2;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+                }
+            }
+       }
+    }
   }
   .nav-bottom-bar {
       // background-color: #ff8080; // theme color

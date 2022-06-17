@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './container/Home';
 import Mine from './container/Mine';
 import Pages from './container/Pages';
+import CodeTest from './container/CodeTest';
 import NotFound from './container/NotFound';
 import './App.scss';
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="Home" element={<Home />} />
         <Route path="Mine" element={<Mine />} />
         <Route path="Pages" element={<Pages />} />
+        <Route path="CodeTest" element={<CodeTest />} />
         <Route path="*" element={<NotFound />} />
         </Routes>
     </Router>
